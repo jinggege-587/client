@@ -121,9 +121,15 @@
             frpId: this.frpId
           }
           this.$api.recharge(sendData, data => {
-            let url = data.resource.url
-            let type = data.resource.type
-            window.iframePay.open(url, this.closeRecharge, type)
+            // let url = data.resource.url
+            // let type = data.resource.type
+            // window.iframePay.open(url, this.closeRecharge, type)
+            var payurl = data.payurl;
+            try {
+              window.android.aliPay(payurl);
+            } catch (ERR) {
+
+            }
           }, err => {
             this.$toast({
               message: err.message

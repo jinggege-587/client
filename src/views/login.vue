@@ -148,25 +148,25 @@ export default {
     },
 	weixin (code){
 		window.android.weiLogin();
+	},
+	push (code){
 		$.ajax({
-		url: "/client//wechatLogin",
-		type: "post",
-		data: {
-			"code": code
-		},
-		success: function(result) {
-			var code = result.responseCode;
-			if (code == "200") {
-				var data = result.message;
-				window.localStorage.setItem("token", data);
-				window.location.href = '/ppapp/#/userCenter';
-			} else {
-				alert("error");
+			url: "/client//wechatLogin",
+			type: "post",
+			data: {
+				"code": code
+			},
+			success: function(result) {
+				var code = result.responseCode;
+				if (code == "200") {
+					var data = result.message;
+					window.localStorage.setItem("token", data);
+					window.location.href = '/ppapp/#/userCenter';
+				} else {
+					alert("error");
+				}
 			}
-
-		}
-
-	})
+		})
 	}
   }
 }

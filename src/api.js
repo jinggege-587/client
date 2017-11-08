@@ -833,6 +833,17 @@ export const showPayPage = (data, success, failure) => {
   ajax(conf, success, failure)
 }
 
+/**
+ * 查询充值展示标志位
+ */
+export const findList = (data, success, failure) => {
+  let conf = {
+    url: '/client/find/list',
+    method: 'get'
+  }
+  ajax(conf, success, failure)
+}
+
 // 统一处理返回数据
 export const allHandle = {
   handleSuccess () {},
