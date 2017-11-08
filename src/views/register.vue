@@ -48,7 +48,7 @@
             maxLength: 20
           }"
           v-model="registerData.pwd2">
-          <span v-if="registerData.pwd2 && registerData.pwd2 !== registerData.pwd" style="color: red;">两次密码不一致</span>
+          <span v-if="registerData.pwd2 && registerData.pwd2 !== registerData.pwd" style="color: #FE4D45;">两次密码不一致</span>
         </mt-field>
         <div style="margin: 10px 0;text-align: center; font-size: 12px;">
           <div style="">
@@ -59,7 +59,7 @@
           </div>
         </div>
         <div style="padding: 0px 10px;">
-        <mt-button style="width:100%;margin-top: 20px;background-color:red;color:#ffffff;" :disabled="submitting" @click="sumbit('registerData')">注册</mt-button>
+        <mt-button style="width:100%;margin-top: 20px;background-color:#FE4D45;color:#ffffff;" :disabled="submitting" @click="sumbit('registerData')">注册</mt-button>
         <a href="javascript: void(0);" style="color:#aaa" @click="$router.replace({name: 'login'})">已有账号？去登录</a>
         </div>
       </div>

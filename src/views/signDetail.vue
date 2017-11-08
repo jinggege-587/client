@@ -163,8 +163,8 @@ ul {
 }
 
 .mint-navbar .mint-tab-item.is-selected {
-  border-bottom: 2px solid #ef0000;
-  color: #ef0000;
+  border-bottom: 2px solid #FE4D45;
+  color: #FE4D45;
   background-color: #ffffff;
 }
 

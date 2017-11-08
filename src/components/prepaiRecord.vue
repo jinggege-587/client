@@ -102,7 +102,7 @@ export default {
 }
 
 .mint-button--danger {
-  background-color: #ef0000;
+  background-color: #FE4D45;
   margin: 0;
 }
 
@@ -181,7 +181,7 @@ img.dealList-img {
 }
 
 .dealList-title p span {
-  color: #EF0000;
+  color: #FE4D45;
 }
 
 .dealList-data {

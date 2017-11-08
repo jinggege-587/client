@@ -94,6 +94,6 @@ ol.signRule-list>li:nth-child(1) ul>li {
 ol.signRule-list>li:nth-child(1) ul>li span {
   font-size: 16px;
   margin: 0 5px;
-  color: #ef0000;
+  color: #FE4D45;
 }
 </style>

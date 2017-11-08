@@ -111,7 +111,7 @@
     text-align: center;
   }
   .agreement-content h3{
-    color:#ef0000;
+    color:#FE4D45;
     font-size: 14px;
     padding:10px 0;
     text-align: center;

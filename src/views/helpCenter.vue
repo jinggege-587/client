@@ -191,7 +191,7 @@ export default {
 }
 
 .popupHelpQuestion-head {
-	background-color: #ef0000;
+	background-color: #FE4D45;
 }
 
 .popupHelpQuestion-head a {

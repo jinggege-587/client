@@ -70,7 +70,7 @@ input{
   margin:0;
 }
 .mint-button--danger{
-  background-color:#ef0000;
+  background-color:#FE4D45;
   margin:0;
 }
 .mint-tabbar.is-fixed{
@@ -125,7 +125,7 @@ input{
   line-height: 48px;
   text-align: center;
   color:#FFFFFF;
-  background-color:#ef0000;
+  background-color:#FE4D45;
   font-size: 18px;
   font-weight: 700;
   position: fixed;
@@ -140,7 +140,7 @@ input{
   margin-left: -48px;
 }
 .page-title a{
-  background-color:#EF0000;
+  background-color:#FE4D45;
   padding-left:15px;
   padding-right:15px;
   float: left;
@@ -154,7 +154,7 @@ input{
   border-radius: 50%;
 }
 .page-title a:before{
-  background-color:#ef0000;
+  background-color:#FE4D45;
   transition: 0.4s;
 }
 .page-title a:active{

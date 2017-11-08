@@ -75,7 +75,7 @@
         <!-- 前往下一期 -->
         <div class="goods-pai-tab">
           <ul class="goods-pai-content">
-            <router-link tag="li" :to="{name: 'goodsDetail', query: {id: resource.itemBean.id}}" style="width: 100%;color: #ffffff;background-color:red; line-height:35px;">
+            <router-link tag="li" :to="{name: 'goodsDetail', query: {id: resource.itemBean.id}}" style="width: 100%;color: #ffffff;background-color:#FE4D45; line-height:35px;">
               前往下一期
             </router-link>
           </ul>
@@ -208,7 +208,7 @@ a {
 }
 
 .goods-price {
-  background-color: #ef0000;
+  background-color: #FE4D45;
   height: 48px;
   color: #FFFFFF;
   line-height: 48px;
@@ -225,7 +225,7 @@ a {
 
 .goods-price p span {
   background-color: #FFFFFF;
-  color: #ef0000;
+  color: #FE4D45;
   font-size: 12px;
   margin-left: 8px;
   padding: 3px 5px;
@@ -330,7 +330,7 @@ table.goods-new-table tr:nth-child(1) td h5 span {
 }
 
 table.goods-new-table tr:nth-child(1) td p span {
-  color: #ef0000;
+  color: #FE4D45;
 }
 
 table.goods-new-table tr:nth-child(1) td p {
@@ -417,7 +417,7 @@ table.goods-new-table tr:nth-child(3) {
 }
 
 .text-danger-large {
-  color: #ef0000;
+  color: #FE4D45;
   font-size: 16px;
 }
 
@@ -431,8 +431,8 @@ table.goods-new-table tr:nth-child(3) {
 }
 
 .mint-navbar .mint-tab-item.is-selected {
-  border-bottom: 2px solid #ef0000;
-  color: #ef0000;
+  border-bottom: 2px solid #FE4D45;
+  color: #FE4D45;
 }
 
 .goodsDetail .mint-tab-item-label {
@@ -539,12 +539,12 @@ ul.goods-pai-content li:nth-child(3) {
   text-align: center;
   color: #ffffff;
   font-size: 12px;
-  background-color: #ef0000;
+  background-color: #FE4D45;
   transition: 0.4s;
 }
 
 ul.goods-pai-content li:nth-child(3):before {
-  background-color: #ef0000;
+  background-color: #FE4D45;
   transition: 0.4s;
 }
 

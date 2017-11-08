@@ -144,7 +144,7 @@
     </div>
     <!-- 选择地址 -->
     <mt-popup :modal="false" v-model="addrPopupVisible" position="bottom" style="width: 100%;">
-      <div style="border-top: 2px solid red;">
+      <div style="border-top: 2px solid #FE4D45;">
         <div style="width: 100%;text-align: center;">
           <mt-button style="float:left" @click="addrPopupVisible = false">取消</mt-button>
           <div style="display: inline-block;width: 50%;line-height:40px;">选择地址</div>
@@ -154,7 +154,7 @@
           <div @click="select(al)" class="address-list" :class="{'select-active': selectAddrressId === al.id}" v-for="(al,$index) in addResource" :key="al.id">
             <h3>{{al.name}}
               <span>{{al.phone}}</span>
-              <label v-if="selectAddrressId === al.id" style="background-color: red;color: #fff">√选中</label>
+              <label v-if="selectAddrressId === al.id" style="background-color: #FE4D45;color: #fff">√选中</label>
             </h3>
             <h5>{{al.detailed_address}}</h5>
             <p>
@@ -171,7 +171,7 @@
     </mt-popup>
     <!-- 选择支付 -->
     <mt-popup :modal="false" v-model="payPopupVisible" position="bottom" style="width: 100%;">
-      <div style="border-top: 2px solid red;">
+      <div style="border-top: 2px solid #FE4D45;">
         <div style="width: 100%;text-align: center;">
           <mt-button style="float:left" @click="payPopupVisible = false">取消</mt-button>
           <div style="display: inline-block;width: 50%;line-height:40px;">选择支付方式</div>
@@ -422,10 +422,10 @@
   padding-right: 10px
 }
 .border-red {
-  border-color: red;
+  border-color: #FE4D45;
 }
 .background-red {
-  background-color: red;
+  background-color: #FE4D45;
 }
 
 .address-list {
@@ -438,7 +438,7 @@
   background-color: red !important;
 }
 .select-active:after{
-  background-color: red;
+  background-color: #FE4D45;
 }
 
 .address-list:before {
@@ -471,7 +471,7 @@
 
 .address-list h3 b {
   font-weight: 400;
-  background-color: #ef0000;
+  background-color: #FE4D45;
   font-size: 12px;
   color: #ffffff;
   padding: 3px 5px;
@@ -559,7 +559,7 @@
 
 .address-add {
   height: 44px;
-  background-color: #ef0000;
+  background-color: #FE4D45;
   display: block;
   width: 60%;
   line-height: 44px;
@@ -571,7 +571,7 @@
 }
 
 .address-add:before {
-  background-color: #ef0000;
+  background-color: #FE4D45;
   transition: 0.4s;
 }
 

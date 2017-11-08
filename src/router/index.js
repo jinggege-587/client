@@ -32,6 +32,9 @@ const register = resolve => require(['views/register'], resolve)
 const messageList = resolve => require(['views/messageList'], resolve)
 const orderDetail = resolve => require(['views/orderDetail'], resolve)
 const agreement = resolve => require(['views/agreement'], resolve)
+const find = resolve => require(['views/find'], resolve)
+const guide = resolve => require(['views/guide'], resolve)
+const share = resolve => require(['views/share'], resolve)
 
 Vue.use(Router)
 
@@ -255,6 +258,30 @@ export default new Router({
       path: '/register',
       name: 'register',
       component: register,
+      meta: {
+        noAuth: true
+      }
+    },
+    {
+      path: '/find',
+      name: 'find',
+      component: find,
+      meta: {
+        noAuth: true
+      }
+    },
+    {
+      path: '/guide',
+      name: 'guide',
+      component: guide,
+      meta: {
+        noAuth: true
+      }
+    },
+    {
+      path: '/share',
+      name: 'share',
+      component: share,
       meta: {
         noAuth: true
       }

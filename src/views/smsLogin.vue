@@ -38,8 +38,8 @@
           </div>
         </div>
         <div style="padding: 0px 10px;">
-        <mt-button style="width:100%;margin-top: 20px;background-color:red;color:#ffffff;" @click="sumbit('loginForm')">登录</mt-button>
-        <mt-button style="width:100%;margin-top: 20px;border-bottom-color:red;color:red;" plain @click="$router.push({name: 'register'})">手机号快速注册</mt-button>
+        <mt-button style="width:100%;margin-top: 20px;background-color:#FE4D45;color:#ffffff;" @click="sumbit('loginForm')">登录</mt-button>
+        <mt-button style="width:100%;margin-top: 20px;border-bottom-color:#FE4D45;color:#FE4D45;" plain @click="$router.push({name: 'register'})">手机号快速注册</mt-button>
         </div>
       </div>
     </div>

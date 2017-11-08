@@ -99,7 +99,7 @@ export default {
 }
 
 ul.collection-list .goods-info .mint-button--danger {
-  background-color: #ef0000;
+  background-color: #FE4D45;
   margin: 10px 0 10px 10px;
 }
 
@@ -159,7 +159,7 @@ ul.collection-list .goods-info p {
 }
 
 ul.collection-list .goods-info p span {
-  color: #ef0000;
+  color: #FE4D45;
 }
 
 ul.collection-list .goods-info label {

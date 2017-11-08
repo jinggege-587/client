@@ -13,7 +13,7 @@
         <mt-cell title="关于我们" is-link to="helpCenter"></mt-cell>
         <br>
         <br>
-        <mt-button v-if="$global.USER.id" size="large" type="danger" style="width: 90%;display: block;margin: 20px auto;background-color: red;" @click="loginOut">退出登录</mt-button>
+        <mt-button v-if="$global.USER.id" size="large" type="danger" style="width: 90%;display: block;margin: 20px auto;background-color: #FE4D45;" @click="loginOut">退出登录</mt-button>
       </div>
     </div>
   </div>

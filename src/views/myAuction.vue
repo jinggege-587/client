@@ -404,8 +404,8 @@ export default {
 }
 
 .mint-navbar .mint-tab-item.is-selected {
-  border-bottom: 2px solid #ef0000;
-  color: #ef0000;
+  border-bottom: 2px solid #FE4D45;
+  color: #FE4D45;
 }
 
 .home .mint-tab-item-label {
@@ -424,7 +424,7 @@ export default {
 }
 
 .mint-button--danger {
-  background-color: #ef0000;
+  background-color: #FE4D45;
   margin: 0;
 }
 
@@ -513,7 +513,7 @@ ul.newDeal-list li a .dealList-title h5 {
 }
 
 ul.newDeal-list li a .dealList-title p span {
-  color: #EF0000;
+  color: #FE4D45;
 }
 
 ul.newDeal-list li a .dealList-data {
@@ -547,13 +547,13 @@ ul.newDeal-list li .dealList-state {
 }
 
 ul.newDeal-list li .dealList-state p b {
-  color: #ef0000;
+  color: #FE4D45;
   font-weight: 400;
 }
 
 ul.newDeal-list li .dealList-state p span {
   float: right;
-  color: #ef0000;
+  color: #FE4D45;
   font-weight: 400;
 }
 </style>

@@ -151,7 +151,7 @@
 
 <style >
 .recharge .mint-button--danger {
-  background-color: #ef0000;
+  background-color: #FE4D45;
   width: 90%;
   margin-left: 5%;
   margin-top: 20px;
@@ -180,7 +180,7 @@
 
 .recharge-head {
   display: inline-block;
-  background-color: #ef0000;
+  background-color: #FE4D45;
   width: 100%;
   padding-bottom: 5px;
 }
@@ -224,7 +224,7 @@ img.recharge-head-headimg {
 ul.recharge-price-grids {
   margin: 0;
   padding: 0;
-  /*background-color: red;*/
+  /*background-color: #FE4D45;*/
   display: inline-block;
   width: 100%;
 }
@@ -247,13 +247,13 @@ ul.recharge-price-grids li a {
 }
 
 ul.recharge-price-grids li.active a {
-  background-color: #ef0000;
+  background-color: #FE4D45;
   color: #ffffff;
 }
 
 .mint-radio-input:checked+.mint-radio-core {
-  background-color: #ef0000;
-  border-color: #ef0000;
+  background-color: #FE4D45;
+  border-color: #FE4D45;
 }
 
 .payList {

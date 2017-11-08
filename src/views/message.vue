@@ -151,7 +151,7 @@ div.circle-red {
   width: 10px;
   height: 10px;
   border-radius: 30px;
-  background-color: #ef0000;
+  background-color: #FE4D45;
   position: absolute;
   right: 10px;
   top: 38px;

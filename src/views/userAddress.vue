@@ -131,7 +131,7 @@ export default {
 
 .address-list h3 b {
   font-weight: 400;
-  background-color: #ef0000;
+  background-color: #FE4D45;
   font-size: 12px;
   color: #ffffff;
   padding: 3px 5px;
@@ -219,7 +219,7 @@ export default {
 
 .address-add {
   height: 44px;
-  background-color: #ef0000;
+  background-color: #FE4D45;
   display: block;
   width: 60%;
   line-height: 44px;
@@ -231,7 +231,7 @@ export default {
 }
 
 .address-add:before {
-  background-color: #ef0000;
+  background-color: #FE4D45;
   transition: 0.4s;
 }
 
@@ -242,7 +242,7 @@ export default {
 
 .address-add span {
   background-color: #ffffff;
-  color: #ef0000;
+  color: #FE4D45;
   height: 32px;
   width: 32px;
   display: inline-block;

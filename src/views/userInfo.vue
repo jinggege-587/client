@@ -44,7 +44,7 @@
       </mt-field>
       <br>
       <mt-field label="新手机号" type="tel" :state="updatePhoneState.phone" :attr="{maxLength: 11}" v-model="updatePhoneData.phone" @blur.native.capture="check('phone')"></mt-field>
-      <div style="color: red;font-size: 14px;text-align: center;">{{phoneErrorMessage}}</div>
+      <div style="color: #FE4D45;font-size: 14px;text-align: center;">{{phoneErrorMessage}}</div>
       <mt-field label="手机验证码" v-model="updatePhoneData.newSms">
         <mt-button size="small" type="default" @click="getCode('new')">{{newCodeMessage}}</mt-button>
       </mt-field>
@@ -75,7 +75,7 @@
       <br>
       <mt-field label="新密码" type="password" :attr="{maxLength: 20}" placeholder="请输入新密码" :state="updatePwdState.newPassword" v-model="updatePwdData.newPassword"></mt-field>
       <mt-field label="确认密码" type="password" :attr="{maxLength: 20}" placeholder="再次输入新密码" :state="updatePwdState.pwdConfirm" v-model="updatePwdData.pwdConfirm"  @blur.native.capture="checkPwd()"></mt-field>
-      <div style="color: red;font-size: 14px;text-align: center;">{{pwdConfirmMessage}}</div>
+      <div style="color: #FE4D45;font-size: 14px;text-align: center;">{{pwdConfirmMessage}}</div>
       <br>
       <div style="width: 100%;text-align: right;">
         <span style="font-size: 14px;padding-right: 20px;color: #888" @click="pwdChange">

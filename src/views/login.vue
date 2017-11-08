@@ -41,12 +41,20 @@
           </div>
         </div>
         <div style="padding: 0px 10px;">
-          <mt-button style="width:100%;margin: 20px 0 10px 0;background-color:red;color:#ffffff;" @click="sumbit('loginForm')">登录</mt-button>
+          <mt-button style="width:100%;margin: 20px 0 10px 0;background-color:#FE4D45;color:#ffffff;" @click="sumbit('loginForm')">登录</mt-button>
           <a href="javascript: void(0);" style="color:#aaa;font-size: 14px;" @click="$router.replace({name: 'smsLogin'})">→使用短信验证码登录</a>
-          <mt-button style="width:100%;margin-top: 20px;border-bottom-color:red;color:red;" plain @click="$router.push({name: 'register'})">手机号快速注册</mt-button>
+          <mt-button style="width:100%;margin-top: 20px;border-bottom-color:#FE4D45;color:#FE4D45;" plain @click="$router.push({name: 'register'})">手机号快速注册</mt-button>
         </div>
       </div>
     </div>
+	<div class="login-weixin">
+		<div class="describe">
+			<span class="f_"></span>
+			<span style="padding: 0 0.8rem;">其他方式登录</span>
+			<span class="f_"></span>
+		</div>
+		<p style="text-align:center;" @click="weixin()"><img src="../../static/img/wechat_session.png" alt=""></p>
+	</div>
   </div>
 </template>
 
@@ -137,11 +145,47 @@ export default {
         position: 'middle',
         duration: 2000
       })
-    }
+    },
+	weixin (code){
+		window.android.weiLogin();
+		$.ajax({
+		url: "/client//wechatLogin",
+		type: "post",
+		data: {
+			"code": code
+		},
+		success: function(result) {
+			var code = result.responseCode;
+			if (code == "200") {
+				var data = result.message;
+				window.localStorage.setItem("token", data);
+				window.location.href = '/ppapp/#/userCenter';
+			} else {
+				alert("error");
+			}
+
+		}
+
+	})
+	}
   }
 }
 </script>
 
 <style>
+	.login-weixin{
+		height: 3rem;
+	}
+	.login-weixin .describe{
+		height: 2rem;
+		padding: 0 3rem;
+	}
+	.login-weixin .describe span{float: left;display: inline-block;}
+	.login-weixin .describe span.f_{
+		width: 6rem;
+		background: #eaeaea;
+		height: 1px;
+		margin-top: .6rem;
+	}
 
 </style>

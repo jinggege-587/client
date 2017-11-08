@@ -209,7 +209,7 @@
     line-height: 48px;
     text-align: center;
     color: #FFFFFF;
-    background-color: #ef0000;
+    background-color: #FE4D45;
     font-size: 18px;
     font-weight: 700;
     position: fixed;
@@ -233,7 +233,7 @@
   }
 
   .mint-button--danger {
-    background-color: #ef0000;
+    background-color: #FE4D45;
     margin: 0;
   }
 
@@ -271,7 +271,7 @@
   }
 
   a.goodsList p {
-    color: #ef0000;
+    color: #FE4D45;
     font-size: 12px;
     height: 24px;
     line-height: 24px;

@@ -21,7 +21,7 @@
           <mt-switch style="display:inline-block;vertical-align: middle;" v-model="addr.acquiescence"></mt-switch>
         </div> -->
         <div style="padding: 0 20px;">
-          <mt-button style="width:100%;margin-top: 20px;background-color:red;color:#ffffff;" @click="sumbit">保存</mt-button>
+          <mt-button style="width:100%;margin-top: 20px;background-color:#FE4D45;color:#ffffff;" @click="sumbit">保存</mt-button>
         </div>
       </div>
     </div>

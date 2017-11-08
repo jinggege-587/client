@@ -99,7 +99,7 @@ export default {
 }
 
 .mint-button--danger {
-  background-color: #ef0000;
+  background-color: #FE4D45;
   margin: 0;
 }
 
@@ -189,7 +189,7 @@ ul.newDeal-list li a .dealList-title h5 {
 }
 
 ul.newDeal-list li a .dealList-title p span {
-  color: #EF0000;
+  color: #FE4D45;
 }
 
 ul.newDeal-list li a .dealList-data {

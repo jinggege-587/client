@@ -108,7 +108,7 @@ export default {
 }
 
 .paiRecord table tr:nth-child(1) {
-  color: #ef0000;
+  color: #FE4D45;
 }
 
 .paiRecord table tr td img {

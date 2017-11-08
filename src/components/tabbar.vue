@@ -7,6 +7,9 @@
       <mt-tab-item id="newDeal" class="page-tabbar-item">
         <i slot="icon" class="icon-tabbar icon-pai" :class="{active: isActive === 'newDeal'}"></i> 最新成交
       </mt-tab-item>
+      <mt-tab-item id="find" class="page-tabbar-item">
+        <i slot="icon" class="icon-tabbar icon-find" :class="{active: isActive === 'find'}"></i> 发现
+      </mt-tab-item>
       <mt-tab-item id="allGoods" class="page-tabbar-item">
         <i slot="icon" class="icon-tabbar icon-allpai" :class="{active: isActive === 'allGoods'}"></i> 全部商品
       </mt-tab-item>
@@ -25,7 +28,7 @@ export default {
       selected: 'home',
       isActive: '',
       isShow: '',
-      SUPPORT: ['home', 'userCenter', 'allGoods', 'newDeal']
+      SUPPORT: ['home', 'userCenter', 'allGoods', 'newDeal', 'find', 'share']
     }
   },
   created () {
@@ -70,6 +73,16 @@ export default {
 	background-position: -140px 2px;
 }
 
+.icon-tabbar.icon-find{
+  background: url(../../static/img/fa.png);
+  background-size: 100%;
+}
+
+.icon-tabbar.icon-find.active{
+  background: url(../../static/img/fa_ac.png);
+  background-size: 100%;
+}
+
 .icon-tabbar.icon-user {
 	background-position: -213px 2px;
 }
@@ -112,7 +125,7 @@ export default {
 }
 
 .mint-tabbar>.mint-tab-item.is-selected {
-  color: #ef0000;
+  color: #FE4D45;
   background-color: rgba(0, 0, 0, 0);
 }
 </style>

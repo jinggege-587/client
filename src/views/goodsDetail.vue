@@ -42,7 +42,7 @@
                   </td>
                   <td colspan="4">
                     <h5>
-                      <span>{{biddersBeans[0].address}}</span>{{biddersBeans[0].name}}<span style="background-color: red;margin-left: 5px;">领先</span></span></h5>
+                      <span>{{biddersBeans[0].address}}</span>{{biddersBeans[0].name}}<span style="background-color: #FE4D45;margin-left: 5px;">领先</span></span></h5>
                     <p>{{resource.settlement?'':'若无人出价,将'}}以
                       <span>￥{{biddersBeans[0].price}}</span>拍得本商品</p>
                   </td>
@@ -129,13 +129,13 @@
                 </mt-popup>
               </template>
               <template v-else>
-                <li style="width: 80%;color: #ffffff;background-color: red; line-height:35px; font-size: 14px;">
+                <li style="width: 80%;color: #ffffff;background-color: #FE4D45; line-height:35px; font-size: 14px;">
                   剩余 {{auction}} 次出价
                 </li>
               </template>
             </template>
             <template v-else>
-              <li @click="toNext()" style="width: 100%;color: #ffffff;background-color:red; line-height:35px;">
+              <li @click="toNext()" style="width: 100%;color: #ffffff;background-color:#FE4D45; line-height:35px;">
                 前往下一期
               </li>
             </template>
@@ -538,7 +538,7 @@
   }
 
   .goods-price {
-    background-color: #ef0000;
+    background-color: #FE4D45;
     height: 48px;
     color: #FFFFFF;
     line-height: 48px;
@@ -555,7 +555,7 @@
 
   .goods-price p span {
     background-color: #FFFFFF;
-    color: #ef0000;
+    color: #FE4D45;
     font-size: 12px;
     margin-left: 8px;
     padding: 3px 5px;
@@ -583,7 +583,7 @@
   .goods-title h3 {
     text-align: center;
     font-size: 32px;
-    color: #ef0000;
+    color: #FE4D45;
     margin-bottom: 10px;
   }
 
@@ -660,7 +660,7 @@
   }
 
   table.goods-new-table tr:nth-child(1) td p span {
-    color: #ef0000;
+    color: #FE4D45;
   }
 
   table.goods-new-table tr:nth-child(1) td p {
@@ -751,7 +751,7 @@
   }
 
   .text-danger-large {
-    color: #ef0000;
+    color: #FE4D45;
     font-size: 16px;
   }
 
@@ -765,8 +765,8 @@
   }
 
   .mint-navbar .mint-tab-item.is-selected {
-    border-bottom: 2px solid #ef0000;
-    color: #ef0000;
+    border-bottom: 2px solid #FE4D45;
+    color: #FE4D45;
   }
 
   .goodsDetail .mint-tab-item-label {
@@ -873,12 +873,12 @@
     text-align: center;
     color: #ffffff;
     font-size: 12px;
-    background-color: #ef0000;
+    background-color: #FE4D45;
     transition: 0.4s;
   }
 
   ul.goods-pai-content li:nth-child(3):before {
-    background-color: #ef0000;
+    background-color: #FE4D45;
     transition: 0.4s;
   }
 
@@ -948,7 +948,7 @@
   }
 
   .selActive {
-    background-color: red;
+    background-color: #FE4D45;
     color: #ffffff;
   }
 </style>

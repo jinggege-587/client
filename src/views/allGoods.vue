@@ -108,7 +108,7 @@
 		},
 		sortResource : {
 			handler: function (val, oldVal) { 
-				debugger
+				// debugger
 				// let width = document.getb
 				// if()
 			}
@@ -247,7 +247,7 @@
 		color: #000000;
 		border-right: 1px solid #ffffff;
 		transition: 0.4s;
-		border-bottom: 2px solid red;
+		border-bottom: 2px solid #FE4D45;
 	}
 
 	ul.sort-nav-list li.active:active {
@@ -285,7 +285,7 @@
   }
 
   .mint-button--danger {
-    background-color: #ef0000;
+    background-color: #FE4D45;
     margin: 0;
   }
 
@@ -294,7 +294,7 @@
     line-height: 48px;
     text-align: center;
     color: #FFFFFF;
-    background-color: #ef0000;
+    background-color: #FE4D45;
     font-size: 18px;
     font-weight: 700;
     position: fixed;
@@ -355,7 +355,7 @@
     left: 0px;
     top: 12px;
     position: absolute;
-    background-color: red;
+    background-color: #FE4D45;
   }
 
   ul.sort-nav-list li.active:active {
@@ -439,7 +439,7 @@
   }
 
   ul.sort-content-list li .sort-content-list-info span {
-    color: #ef0000;
+    color: #FE4D45;
     font-size: 14px;
     margin-left: 10px;
   }

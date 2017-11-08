@@ -206,7 +206,7 @@ export default {
 
 <style scoped>
 .text-danger {
-  color: #ef0000;
+  color: #FE4D45;
 }
 
 a {
@@ -219,7 +219,7 @@ a {
   line-height: 48px;
   text-align: center;
   color: #FFFFFF;
-  background-color: #ef0000;
+  background-color: #FE4D45;
   font-size: 18px;
   font-weight: 700;
   position: fixed;
@@ -244,7 +244,7 @@ a {
 
 .userCenter-head a:before,
 .userCenter .page-title a.icon-right:before {
-  background-color: #ef0000;
+  background-color: #FE4D45;
   transition: 0.4s;
   border-radius: 50%;
 }
@@ -262,7 +262,7 @@ a {
 }
 
 .userCenter-head {
-  background-color: #ef0000;
+  background-color: #FE4D45;
   width: 100%;
   height: 110px;
 }
