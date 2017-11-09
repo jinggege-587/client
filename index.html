@@ -11,6 +11,28 @@
     <div id="app"></div>
     <script src="static/js/swiper.min.js"></script>
     <script src="static/js/jquery.min.js"></script>
+    <script>
+      function push(code) {
+        $.ajax({
+          url: "/client//wechatLogin",
+          type: "post",
+          data: {
+            "code": code
+          },
+          success: function(result) {
+            var code = result.responseCode;
+            if (code == "200") {
+              var data = result.message;
+              window.localStorage.setItem("token", data);
+              window.location.href = '/ppapp/#/userCenter';
+            } else {
+              alert("error");
+            }
+          }
+        })
+      }
+
+    </script>
     <!-- built files will be auto injected -->
   </body>
 </html>
