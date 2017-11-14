@@ -49,15 +49,15 @@
       return {
         screenWidth: (document.body.clientWidth - 90),
         screenHeight: (document.body.clientHeight - 100),
-		selectSortId: 0,
-		navWidth:document.body.clientWidth,
+		    selectSortId: 0,
+		    navWidth:document.body.clientWidth,
         querySort: {
           pageNo: 1,
           pageSize: 20
         },
         sortResource: {
-		  content: [],
-		  topnav: [],
+          content: [],
+          topnav: [],
           last: false
         },
         resource: {
@@ -108,10 +108,12 @@
 		},
 		sortResource : {
 			handler: function (val, oldVal) { 
-				// debugger
-				// let width = document.getb
-				// if()
-			}
+				if(val.topnav && val.topnav.length*103 > this.navWidth){
+					this.navWidth = val.topnav.length*103;
+					console.log(this.navWidth);
+				}
+			},
+			deep: true
 		}
     },
     created () {

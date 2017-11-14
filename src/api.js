@@ -5,7 +5,7 @@ import { hexMd5 } from '../static/js/md5.js' // MD5加密
 import { Promise } from 'es6-promise-polyfill'
 window.Promise = Promise
 Vue.prototype.$ajax = axios // 挂载到全局
-axios.defaults.baseURL = '' // 访问路径
+axios.defaults.baseURL = 'http://120.27.215.97:803' // 访问路径
 axios.defaults.withCredentials = true // 跨域带sension
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8'
 axios.defaults.transformRequest = function (data) {
