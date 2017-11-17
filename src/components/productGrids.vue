@@ -280,12 +280,12 @@
 
   a.goodsList p.active {
     border-radius: 30px;
-    animation: priceAcitve 1s infinite ease;
-    -moz-animation: priceAcitve 1s infinite ease;
+    animation: priceAcitve 10s infinite ease;
+    -moz-animation: priceAcitve 10s infinite ease;
     /* Firefox */
-    -webkit-animation: priceAcitve 1s infinite ease;
+    -webkit-animation: priceAcitve 10s infinite ease;
     /* Safari and Chrome */
-    -o-animation: priceAcitve 1s infinite ease;
+    -o-animation: priceAcitve 10s infinite ease;
     /* Opera */
   }
 
